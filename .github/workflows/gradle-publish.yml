@@ -22,5 +22,5 @@ jobs:
     - name: Build with Gradle
       run: gradle build -x test
 
-    - name: Publish to GitHub Packages
+    - name: Publish to Gradle plugins
       run: gradle publishPlugins -Pgradle.publish.key=${{ secrets.GRADLE_PLUGIN_KEY }} -Pgradle.publish.secret=${{ secrets.GRADLE_PLUGIN_SECRET }}

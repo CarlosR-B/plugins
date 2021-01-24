@@ -37,3 +37,9 @@ gradlePlugin {
         }
     }
 }
+
+pluginBundle {
+    website = "https://quiescence.dev/"
+    vcsUrl = "https://github.com/CarlosR-B/plugins"
+    tags = listOf("gradle", "versioning", "ci", "version")
+}
