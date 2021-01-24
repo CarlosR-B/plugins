@@ -18,11 +18,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build with Gradle
       run: gradle build -x test
 
     - name: Publish to GitHub Packages
-      run: publishPlugins -Pgradle.publish.key=${{ secrets.GRADLE_PLUGIN_KEY }} -Pgradle.publish.secret=${{ secrets.GRADLE_PLUGIN_SECRET }}
+      run: gradle publishPlugins -Pgradle.publish.key=${{ secrets.GRADLE_PLUGIN_KEY }} -Pgradle.publish.secret=${{ secrets.GRADLE_PLUGIN_SECRET }}
