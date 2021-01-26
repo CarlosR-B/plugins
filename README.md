@@ -1,4 +1,4 @@
-# Plugins for a simpler Gradle life ![Gradle build](https://github.com/CarlosR-B/plugins/workflows/Gradle%20build/badge.svg)
+# Plugins for a simpler Gradle life ![Gradle build](https://github.com/CarlosR-B/plugins/workflows/Gradle%20build/badge.svg?branch=main)
 
 Plugins is a super-secret military-grade repository for the best plugin(s) in the Gradle world.
 
